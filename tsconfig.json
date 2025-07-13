@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "tinstyle/vue": [
+                "../tinstyle/vue/index.ts"
+            ],
+            "tinstyle/react": [
+                "../tinstyle/react/index.ts"
+            ]
+        }
+    }
+}

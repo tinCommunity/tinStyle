@@ -1,14 +1,22 @@
 <template>
-    <button :class="finalClass" v-bind="$attrs">
-        <slot />
-    </button>
+  <button class="btn" @click="$emit('click', $event)">
+    <slot />
+  </button>
 </template>
 
-<script setup>
-import { computed } from 'vue';
-
-const props = defineProps({ class: String });
-const finalClass = computed(() =>
-    `px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition ${props.class || ''}`
-);
+<script setup lang="ts">
+const emit = defineEmits<{
+  (e: 'click', event: MouseEvent): void
+}>();
 </script>
+
+<style scoped>
+.btn {
+  padding: 8px 16px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+</style>
