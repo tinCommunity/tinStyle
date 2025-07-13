@@ -1,0 +1,28 @@
+{
+  "name": "tinstyle",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "UI Components for React and Vue",
+  "homepage": "https://github.com/tinCommunity/tinStyle#readme",
+  "bugs": {
+    "url": "https://github.com/tinCommunity/tinStyle/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinCommunity/tinStyle.git"
+  },
+  "exports": {
+    "./react": "./react/index.js",
+    "./vue": "./vue/index.js"
+  },
+  "files": [
+    "react",
+    "vue"
+  ],
+  "license": "ISC",
+  "author": "moneyGum",
+  "peerDependencies": {
+    "react": ">=18.0.0 <20.0.0",
+    "vue": ">=3.0.0 <4.0.0"
+  }
+}
